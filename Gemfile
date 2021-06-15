@@ -24,6 +24,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 
+gem 'iex-ruby-client'
+
+# client = IEX::Api::Client.new(
+#   publishable_token: 'Tpk_17bbea90502f4c169394e0036b4f29aa',
+#   secret_token: 'Tsk_c2c8917ea5224161b56cedb9040762d2',
+#   endpoint: 'https://sandbox.iexapis.com'
+# )
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
