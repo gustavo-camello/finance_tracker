@@ -13,11 +13,13 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Profile
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <%= link_to "Log in", user_session_path, class: "dropdown-item" %>
-            <a class="dropdown-item" href="#">Another action</a>
+            <%= link_to edit_user_registration_path, class: "dropdown-item" do %>
+              <%= fa_icon "edit" %> Edit Profile
+            <% end %>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
@@ -26,6 +28,9 @@
           <%= link_to "Log out", destroy_user_session_path, class: "nav-link", method: :delete %>
         </li>
       </ul>
+      <li class="nav-item mt-2 ml-5 user-name">
+        <%= fa_icon "user" %>  <%= current_user.full_name%>
+      </li>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
