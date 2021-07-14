@@ -14,7 +14,7 @@ This project contains all CRUD functions, authentication, login/logout, sign up,
 ## Built with
 - Ruby on Rails
 
-## Improvements
+## To be Improved
 - Improve the UI in general
 
 ## Contact
